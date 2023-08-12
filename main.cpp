@@ -23,6 +23,28 @@ void pattern1() {
     }
 }
 
+void pattern2() {
+    /*
+     *
+     * *
+     * * *
+     * * * *
+     * * * * *
+     * * * * * *
+     * */
+    int row;
+    cout<<"Enter Rows :";
+    cin>>row;
+
+    for(int i = 0; i<row; i++) {
+        for(int j = 0; j<i+1; j++) {
+            cout<<"* ";
+        }
+        cout<<"\n";
+    }
+}
+
 int main() {
     pattern1();
+    pattern2();
 }
