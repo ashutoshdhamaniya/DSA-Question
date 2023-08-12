@@ -126,11 +126,59 @@ void pattern6() {
     }
 }
 
+void pattern7() {
+    /*
+     *     *
+     *    ***
+     *   *****
+     *  *******
+     * *********
+     * */
+    int row;
+    cout<<"Enter Rows :";
+    cin>>row;
+
+    for(int i=0; i<row; i++) {
+        for (int j = row-(i+1); j >=0 ; j--)
+            cout<<" ";
+
+        for(int k=0; k<2*i+1; k++)
+            cout<<"*";
+
+        cout<<"\n";
+    }
+}
+
+void pattern8() {
+    /*
+     * *********
+     *  *******
+     *   *****
+     *    ***
+     *     *
+     * */
+    int row;
+    cout<<"Enter Rows :";
+    cin>>row;
+
+    for(int i=row; i>=0; i--) {
+        for (int j = 0; j < row-i; j++)
+            cout<<" ";
+
+        for(int j = 0; j<2*i-1; j++)
+            cout<<"*";
+
+        cout<<"\n";
+    }
+}
+
 int main() {
-    pattern1();
-    pattern2();
-    pattern3();
-    pattern4();
-    pattern5();
-    pattern6();
+//    pattern1();
+//    pattern2();
+//    pattern3();
+//    pattern4();
+//    pattern5();
+//    pattern6();
+//    pattern7();
+//    pattern8();
 }
